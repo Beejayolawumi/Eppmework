@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  height: 280px;
+  /* top  : 3677px; */
+  padding: 0px, 112px, 0px, 112px;
+  background: #052d2f;
+}
+
+.footer {
+  width: 60%;
+  height: 227px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 35%;
+  top: 520%;
+  column-gap: 80px;
+}
+
+.logo_container {
+  width: 60%;
+  height: 227px;
+  gap: 16px;
+  position: relative;
+  top: 35px;
+  left: 70px;
+}
+
+.logo {
+  width: 38px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 100px;
+  background: #ffffff;
+}
+
+.image1 {
+  width: 28px;
+  height: 35px;
+  top: 5px;
+  left: 8px;
+}
+
+.ikorodu {
+  width: 258px;
+  height: 21px;
+  margin-top: 12px;
+}
+
+.ikorodu_para {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 21px;
+  text-align: left;
+  color: #ebebeb;
+}
+
+.info {
+  width: 151px;
+  height: 21px;
+  margin-top: 8px;
+}
+
+.info_para {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 21px;
+  text-align: left;
+  color: #ebebeb;
+}
+
+.helpme {
+  width: 129px;
+  height: 21px;
+  margin-top: 8px;
+}
+
+.helpme_para {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 18px;
+  text-align: left;
+  color: #ebebeb;
+}
+
+.copyright {
+  width: 200px;
+  height: 40px;
+
+  margin-top: 8px;
+}
+
+.copyright_para {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.cat {
+  width: 70%;
+  height: 20px;
+  /* position: relative;
+  bottom: 60px; */
+  margin-top: -30%;
+}
+
+.categories {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 95px;
+  margin-bottom: 10px;
+  color: #ebebeb;
+}
+
+.list {
+  list-style: none;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 18px;
+  text-align: left;
+  color: #ebebeb;
+}
+
+.follow {
+  gap: 16px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
