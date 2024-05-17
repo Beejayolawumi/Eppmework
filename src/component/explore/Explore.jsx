@@ -77,7 +77,7 @@ const Explore = () => {
           <div className="image_container">
             <img
               className={style.animated_image}
-              src="/public/medium-shot-man-cleaning-table 4.png"
+              src="/imagefolder/medium-shot-man-cleaning-table 4.png"
               alt="A man cleaning"
             />
 
