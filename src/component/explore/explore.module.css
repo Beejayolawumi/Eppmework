@@ -1,6 +1,6 @@
 .home {
-  /* width: 100%; */
-  height: 500px;
+  width: 100%;
+  height: 75vh;
   background: #e7f0f1;
 
   display: flex;
@@ -10,20 +10,20 @@
 
 .h1 {
   width: 58%;
-  height: 300px;
-  position: relative;
-  right: 50px;
-  /* gap: 24px; */
+  padding-left: 40px;
 }
 
+.buttoncomponent {
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  margin-top: 40px;
+}
 .explore {
   font-family: "Archivo";
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 60px;
-  position: relative;
-  right: 30px;
-  top: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
   color: #000000;
 }
 
@@ -34,12 +34,13 @@
 .exploreP {
   font-family: "Inter";
   font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  position: relative;
-  right: 28px;
+  font-weight: 500;
+  line-height: 1.7;
   margin-top: 16px;
   color: #333333;
+}
+.exploreP span {
+  display: block;
 }
 
 .background {
@@ -54,29 +55,6 @@
   background: #0c6b71;
 }
 
-/* .image {
-  width: 270px;
-  height: 340px;
-  border-radius: 20px;
-  position: relative;
-  bottom: 15px;
-  right: 35px;
-} */
-
-.book {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 14px;
-  /* margin-top: 85px; */
-  position: absolute;
-  top: 70%;
-  right: 28%;
-}
-
 .btn__1 {
   font-family: "Inter";
   font-size: 16px;
@@ -86,13 +64,11 @@
 
   width: 190px;
   height: 30px;
-  /* font-size: 14px; */
   padding: 21px;
   border-radius: 10px;
   color: #ffffff;
   background: #0c6b71;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   text-decoration: none;
 }
@@ -102,11 +78,6 @@
   bottom: 12px;
 }
 
-/* .btn__1:hover {
-  color: #e1ad01;
-  cursor: pointer;
-} */
-
 .arrow {
   position: relative;
   bottom: 10px;
@@ -115,7 +86,6 @@
 
 .arrow2 {
   position: relative;
-  /* bottom: 10px; */
   right: -10px;
   color: #ffffff;
 }
@@ -127,17 +97,16 @@
   line-height: 27px;
   text-align: center;
 
-  width: 14%;
+  width: 190px;
   height: 30px;
-  /* font-size: 14px; */
   padding: 21px;
   border-radius: 10px;
   color: #ffffff;
   background-color: #e1ad01;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .arrow_img {
@@ -155,16 +124,18 @@
   top: 12px;
 }
 
+.Link {
+  text-decoration: none;
+}
+
 .image_container {
-  width: 15%;
-  height: 360px;
+  width: 30%;
+  height: 120px;
   border-radius: 20px;
-  position: relative;
-  bottom: 15px;
-  right: 40px;
-  /* width: 300px;
-  height: 200px;
-  position: relative; */
+  display: flex;
+  align-content: center;
+  margin-top: -250px;
+  margin-right: 40px;
 }
 
 .animated_image {
@@ -172,7 +143,6 @@
   height: 95%;
   border-radius: 12px;
   position: absolute;
-  /* top: 20; */
   right: 40;
   bottom: 30px;
   opacity: 2;
@@ -207,5 +177,45 @@
   50%,
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .home {
+    height: unset;
+    width: 100%;
+  }
+  .image_container {
+    display: none;
+  }
+
+  .h1 {
+    width: 100%;
+    height: auto;
+    position: unset;
+    right: unset;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: orangered; */
+    padding: 1rem;
+  }
+  .exploreP {
+    font-size: 14px;
+    text-align: center;
+  }
+  .exploreP span {
+    display: unset;
+  }
+  .explore {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .buttoncomponent {
+    flex-direction: column;
+    width: unset;
+    padding: 1rem;
+    background-color: unset;
   }
 }

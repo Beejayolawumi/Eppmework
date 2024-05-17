@@ -19,7 +19,7 @@ const dummyData = [
     name: "John Smith",
     artisan: "Task Provider",
     email: "@johnsmith",
-    image: "/public/handsome-elegant-man-car-salon 1.png",
+    image: "/handsome-elegant-man-car-salon 1.png",
     social: "/src/assets/Group 12.png",
 
     message:

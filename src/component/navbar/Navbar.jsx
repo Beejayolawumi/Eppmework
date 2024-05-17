@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { Link } from "react-scroll";
-
+import { HiBars3 } from "react-icons/hi2";
+import { CgClose } from "react-icons/cg";
 import style from "./navbar.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [toggleIcon, setToggleIcon] = useState(false);
 
   const Dropdown = () => {
     setOpen(!open);
@@ -16,6 +17,10 @@ const Navbar = () => {
       top: y,
       behavior: "smooth",
     });
+  };
+
+  const handleToggleIcon = () => {
+    setToggleIcon(!toggleIcon);
   };
 
   return (
@@ -31,9 +36,17 @@ const Navbar = () => {
             alt="logo"
           />
         </div>
-        <div>
-          <nav>
-            <ul className={style.navbar}>
+        <button className={style.btn_icon} onClick={handleToggleIcon}>
+          {toggleIcon ? (
+            <CgClose style={{ fontSize: "35px" }} />
+          ) : (
+            <HiBars3 style={{ fontSize: "35px" }} />
+          )}
+        </button>
+
+        <div className={style.mobile_nav}>
+          <nav className={style.mobile}>
+            <ul className={`${style.navbar} ${toggleIcon ? style.active : ""}`}>
               <li className={style.servicework}></li>
               <li className={style.service} onClick={Dropdown}>
                 Services
@@ -53,7 +66,6 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-
               <div className={style.work} onClick={() => scrollTo(1250)}>
                 How it works
               </div>

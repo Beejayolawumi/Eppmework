@@ -16,6 +16,8 @@ import Question from "./dashboard/requests/question/Question";
 import Question2 from "./dashboard/requests/question/Question2";
 import Question3 from "./dashboard/requests/question/Question3";
 import Question4 from "./dashboard/requests/question/Question4";
+import AboutUs from "./component/aboutus/AboutUs";
+import OutletComp from "./component/outletcomponent/OutletComp";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/" element={<OutletComp />}>
+          <Route path="/aboutus" element={<AboutUs />} />
+        </Route>
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/welcomepage" element={<WelcomePage />} />

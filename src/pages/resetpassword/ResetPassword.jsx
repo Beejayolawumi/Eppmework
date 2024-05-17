@@ -1,7 +1,14 @@
 import React from "react";
 import style from "./resetpassword.module.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import EmailSent from "../../component/emailsent/EmailSent";
 
 const ResetPassword = () => {
+  const [open, setIsOpen] = useState(false);
+  const Shoow = () => {
+    setIsOpen(!open);
+  };
   return (
     <div>
       <div className={style.container}>
@@ -19,18 +26,19 @@ const ResetPassword = () => {
         </div>
 
         <div className={style.epme_container}>
-          <img
-            className={style.epp_header}
-            src="/src/assets/EppMeWork.png"
-            alt="image"
-          />
+          <div className={style.epme_image}>
+            <img
+              className={style.epp_header}
+              src="/src/assets/EppMeWork.png"
+              alt="image"
+            />
 
-          <img
-            className={style.epp_header2}
-            src="/src/assets/handshake (1) 1.png"
-            alt="image"
-          />
-
+            <img
+              className={style.epp_header2}
+              src="/src/assets/handshake (1) 1.png"
+              alt="image"
+            />
+          </div>
           <div className={style.form}>
             <div className={style.password_container}>
               <h3 className={style.password}>Reset Password</h3>
@@ -49,12 +57,18 @@ const ResetPassword = () => {
               className={style.form_input}
               type="text"
               placeholder="Email Address"
+              required
             />
             <br />
           </div>
 
           <div className={style.btn_para}>
-            <h4 className={style.btn_log}>Send</h4>
+            <h4>
+              <Link onClick={Shoow} className={style.btn_log}>
+                Send
+              </Link>
+              {open && <EmailSent />}
+            </h4>
           </div>
         </div>
       </div>

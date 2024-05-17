@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Button from "../button/Button";
 import style from "./explore.module.css";
 
 const Explore = () => {
   return (
-    <div className={style.home}>
+    <section className={style.home}>
       <div className={style.h1}>
         <h1 className={style.explore}>
           Explore the
@@ -15,12 +15,63 @@ const Explore = () => {
         <p className={style.exploreP}>
           Linking you with Skilled craftsmen, Expert contractors, and Reliable
           service
-          <p>providers to redefine your home transformation journey.</p>
+          <span>providers to redefine your home transformation journey.</span>
         </p>
-      </div>
-
-      <div>
-        <div className={style.book}>
+        <div className={style.buttoncomponent}>
+          <Link to="/Question" className={style.Link}>
+            <Button
+              style={{
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                width: "200px",
+                height: "30px",
+                padding: "1.5rem",
+                backgroundColor: "#0c6b71",
+                border: "none",
+                borderRadius: "10px",
+                fontFamily: "Inter",
+                fontSize: "15px",
+                fontWeight: "600",
+                color: "white",
+                cursor: "pointer",
+              }}
+            >
+              Book a service
+              <img
+                className={style.arrow_img}
+                src="\ArrowRight.png"
+                alt="arrow right"
+              />
+            </Button>
+          </Link>
+          <Button
+            style={{
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+              padding: "1.5rem",
+              width: "200px",
+              height: "30px",
+              backgroundColor: " #e1ad01",
+              border: "none",
+              borderRadius: "10px",
+              fontFamily: "Inter",
+              fontSize: "15px",
+              fontWeight: "600",
+              color: "white",
+            }}
+          >
+            Offer a service
+            <img
+              className={style.arrow_img}
+              src="\ArrowRight.png"
+              alt="arrow right"
+            />
+          </Button>
+        </div>
+        {/* <div className={style.book}>
+          <div></div>
           <h4>
             <Link to="/Question" className={style.btn__1}>
               <p>Book a Service</p>
@@ -44,14 +95,15 @@ const Explore = () => {
             </p>
             <p className={style.arrow2}></p>
           </h4>
-        </div>
+        </div> */}
       </div>
+
       <div className={style.image_container}>
         <div className={style.background}>
           <div className="image_container">
             <img
               className={style.animated_image}
-              src="/public/medium-shot-man-cleaning-table 4.png"
+              src="/medium-shot-man-cleaning-table 4.png"
               alt="A man cleaning"
             />
 
@@ -71,26 +123,9 @@ const Explore = () => {
               alt="A man cleaning"
             />
           </div>
-
-          {/* <div className={style.image_container}>
-            <div>
-              <img
-                className={style.image}
-                src="\medium-shot-man-cleaning-table 4.png"
-                alt="A man cleaning"
-              />
-            </div>
-            <div>
-              <img
-                className={style.image2}
-                src="/src/assets/african-american-man-getting-ready-his-new-home-move (1) 1.png"
-                alt="A man cleaning"
-              />
-            </div>
-          </div> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

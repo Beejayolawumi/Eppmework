@@ -61,9 +61,6 @@
   position: relative;
   left: 5px;
   top: -40px;
-  /* padding: 30px 80px 30px 330px; */
-  /* gap: 1022px; */
-  /* border: 0px 0px 1px 0px; */
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -101,7 +98,7 @@
   height: 650px;
   position: relative;
   top: -20px;
-  right: -20%;
+  left: 120px;
   /* left: 95%; */
   border: 1px;
   border: 1px solid #c0c0c0;
@@ -318,4 +315,7 @@
   left: 50px;
   bottom: 14px;
   background: #ffffff;
+}
+.green_bg {
+  background: #0c6b71;
 }

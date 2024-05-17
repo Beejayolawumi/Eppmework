@@ -1,39 +1,29 @@
 .container {
   width: 100%;
-  height: 280px;
-  /* top  : 3677px; */
+  height: 270px;
   padding: 0px, 112px, 0px, 112px;
   background: #052d2f;
 }
 
-.footer {
-  width: 60%;
-  height: 227px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* border: 1px solid red; */
-  position: absolute;
-  left: 35%;
-  top: 520%;
-  column-gap: 80px;
-}
-
-.logo_container {
-  width: 60%;
-  height: 227px;
-  gap: 16px;
-  position: relative;
-  top: 35px;
-  left: 70px;
-}
-
 .logo {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.footer_contact {
   width: 38px;
   height: 40px;
   padding: 5px;
   border-radius: 100px;
   background: #ffffff;
+  margin-top: 0px;
+}
+
+.contact {
+  margin-top: 20px;
 }
 
 .image1 {
@@ -105,22 +95,42 @@
   color: #ffffff;
 }
 
-.cat {
-  width: 70%;
-  height: 20px;
-  /* position: relative;
-  bottom: 60px; */
-  margin-top: -30%;
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.categories {
+/* .categories {
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
-  margin-top: 95px;
-  margin-bottom: 10px;
+  line-height: 30px;
+  margin-top: 20px;
   color: #ebebeb;
+} */
+
+.categories_div {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #ebebeb;
+}
+
+.categories_legal {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  color: #ebebeb;
+  margin-bottom: 30px;
+}
+.categories_follow {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  color: #ebebeb;
+  margin-bottom: 70px;
 }
 
 .list {
@@ -128,9 +138,20 @@
   font-family: "Inter";
   font-size: 12px;
   font-weight: 200;
+  line-height: 25px;
+  text-align: left;
+  color: #ebebeb;
+}
+
+.about {
+  list-style: none;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 200;
   line-height: 18px;
   text-align: left;
   color: #ebebeb;
+  text-decoration: none;
 }
 
 .follow {
@@ -139,4 +160,35 @@
   display: flex;
   flex-direction: row;
   margin-top: 8px;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    height: unset;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  .footer_container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    padding-left: 20px;
+  }
+
+  .footer_contact {
+    margin-top: 20px;
+  }
+
+  .categories_div,
+  .categories_legal,
+  .categories_follow {
+    margin-bottom: 20px;
+  }
+
+  .follow {
+    margin-top: 20px;
+  }
 }

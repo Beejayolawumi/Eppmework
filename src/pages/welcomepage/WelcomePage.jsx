@@ -7,12 +7,35 @@ import { Link } from "react-router-dom";
 
 const WelcomePage = () => {
   const [show, setShow] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isFormFilled, setIsFormFilled] = useState(false);
 
   function handlePassword() {
     setShow(!show);
   }
+
+  const handleEmailChange = (e) => {
+    console.log(e.target.value);
+    setEmail(e.target.value);
+    checkFormFilled();
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    checkFormFilled();
+  };
+
+  const checkFormFilled = () => {
+    if (email !== "" && password !== "") {
+      setIsFormFilled(true);
+    } else {
+      setIsFormFilled(false);
+    }
+  };
+
   return (
-    <div className={style.main_container}>
+    <div className={`${style.main_container} `}>
       <img
         className={style.image_container}
         src="/medium-shot-man-cleaning-table 1.png"
@@ -55,6 +78,7 @@ const WelcomePage = () => {
               className={style.form_input}
               type="email"
               placeholder="Email Address"
+              onInput={handleEmailChange}
             />
             <br /> <br />
             <p className={style.password}>Password</p>
@@ -62,6 +86,7 @@ const WelcomePage = () => {
               className={style.form_input}
               type={show ? "text" : "password"}
               placeholder="**********"
+              onInput={handlePasswordChange}
             />
             <div className={style.eye_icon} onClick={handlePassword}>
               {show ? <FiEye /> : <FiEyeOff />}
@@ -72,7 +97,11 @@ const WelcomePage = () => {
                 Forgot Password?
               </Link>
             </div>
-            <div className={style.create_btn}>
+            <div
+              className={` ${style.create_btn} ${
+                isFormFilled && style.green_bg
+              }`}
+            >
               <p>
                 <Link to="/DashBoard1" className={style.create_para}>
                   Log in

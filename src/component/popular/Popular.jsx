@@ -1,11 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./popu.module.css";
 
 const dummyData = [
-  // {
-  //   text: "Popular Projects",
-  // },
-
   {
     id: 1,
     image: "/src/assets/side-view-adult-male-cleaning-window 1 (1).png",
@@ -60,6 +56,12 @@ const dummyData = [
 ];
 
 const Popular = () => {
+  const [imageSlider, setImageSlider] = useState(0);
+
+  const handleImageSlider = () => {
+    setImageSlider(!setImageSlider);
+  };
+
   return (
     <>
       <div className={style.popular_container}>
@@ -67,8 +69,29 @@ const Popular = () => {
         <div className={style.popular}>
           {dummyData.map((item, index) => {
             return (
-              <div className={style.mainContainer}>
+              <div className={style.mainContainer} key={index}>
                 <div className={style.popular_div}>
+                  <div className={style.image_div}>
+                    <img src={item.image} alt="image" />
+                    <div className={style.image_container}>
+                      {item.heading} <p> {item.paragraph}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className={style.popular}>
+          {dummyData.map((item, index) => {
+            return (
+              <div
+                className={`${style.mainContainer} ${style.mobile_main_container}`}
+                key={index}
+              >
+                <div
+                  className={`${style.popular_div} ${style.slidingpanelcontainer}`}
+                >
                   <div className={style.image_div}>
                     <img src={item.image} alt="image" />
                     <div className={style.image_container}>

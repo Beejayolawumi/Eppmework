@@ -7,15 +7,72 @@ import { handleuser } from "../../Redux/slice/UserInformations";
 import { useSelector, useDispatch } from "react-redux";
 const SignUp = () => {
   const [show, setShow] = useState(false);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [password, setPassword] = useState("");
+  const { confirmPassword, setConfirmPassword } = useState("");
+  const [isFormFilled, setIsFormFilled] = useState(false);
+
   const { value } = useSelector((state) => state.userDetails);
+
   function handlePassword() {
     setShow(!show);
   }
+
+  const handleFirstNameChange = (e) => {
+    setFirstName(e.target.value);
+    checkFormFilled();
+  };
+
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+    checkFormFilled();
+  };
+
+  const handleEmailChange = (e) => {
+    console.log(e.target.value);
+    setEmail(e.target.value);
+    checkFormFilled();
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    checkFormFilled();
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    setPhoneNumber(e.target.value);
+    checkFormFilled();
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+    checkFormFilled();
+  };
+
+  const checkFormFilled = () => {
+    if (
+      email !== "" &&
+      password !== "" &&
+      phoneNumber !== "" &&
+      lastName !== "" &&
+      firstName !== "" &&
+      confirmPassword !== ""
+    ) {
+      setIsFormFilled(true);
+    } else {
+      setIsFormFilled(false);
+    }
+  };
+
   const dispatch = useDispatch();
-  function dispay(e) {
+  function display(e) {
     dispatch(handleuser(e.target.value));
     console.log(userDeatils);
   }
+
   return (
     <div className={style.main_container}>
       <img
@@ -58,31 +115,38 @@ const SignUp = () => {
               className={style.form_input}
               type="text"
               placeholder="First Name"
-              onInput={dispay}
+              onInput={handleFirstNameChange}
             />
             <br /> <br />
             <input
               className={style.form_input}
               type="text"
               placeholder="Last Name"
+              onInput={handleLastNameChange}
             />
             <br /> <br />
             <input
               className={style.form_input}
               type="email"
               placeholder="Email Address"
+              required
+              onInput={handleEmailChange}
             />
             <br /> <br />
             <input
               className={style.form_input}
               type="text"
               placeholder="Phone Number"
+              required
+              onInput={handlePhoneNumberChange}
             />
             <br /> <br />
             <input
               className={style.form_input}
               type={show ? "text" : "password"}
               placeholder="Password"
+              required
+              onInput={handlePasswordChange}
             />
             <div className={style.eye_icon} onClick={handlePassword}>
               {show ? <FiEye /> : <FiEyeOff />}
@@ -92,7 +156,10 @@ const SignUp = () => {
               className={style.form_input2}
               type={show ? "text" : "password"}
               placeholder="Confirm Password"
+              required
+              onInput={handleConfirmPasswordChange}
             />
+            {/* <div className={style.eye_icon2} onClick={handlePassword}></div> */}
             <div className={style.terms}>
               <p className={style.terms_para}>
                 By clicking below and creating an account, I agree to
@@ -101,7 +168,11 @@ const SignUp = () => {
                 <span>Privacy Policy.</span>
               </p>
             </div>
-            <div className={style.create_btn}>
+            <div
+              className={` ${style.create_btn} ${
+                isFormFilled && style.green_bg
+              }`}
+            >
               <p>
                 <Link to="/DashBoard1" className={style.create_para}>
                   Create Account

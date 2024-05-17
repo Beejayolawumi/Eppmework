@@ -28,7 +28,7 @@ const OurMission = () => {
           </p>
         </div>
       </div>
-      <div className={style.imag_containe}>
+      <div className={style.imag_container}>
         <img
           className={style.image}
           src="\Frame 1000005327.png"
