@@ -34,7 +34,7 @@ const Question4 = () => {
               />
               <img
                 className={style.image}
-                src="/src/assets/₦.png"
+                src="/imagefolder/₦.png"
                 alt="Naira logo"
               />
             </div>

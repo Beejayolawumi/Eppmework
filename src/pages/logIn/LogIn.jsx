@@ -15,7 +15,7 @@ const LogIn = () => {
       <div className={style.help}>
         <img
           className={style.baseline}
-          src="/src/assets/ic_baseline-help-outline.png"
+          src="/imagefolder/ic_baseline-help-outline.png"
           alt="baseline-icon"
         />
         Help
@@ -24,13 +24,13 @@ const LogIn = () => {
         <div className={style.form_container}>
           <img
             className={style.epp_header}
-            src="/src/assets/EppMeWork.png"
+            src="/imagefolder/EppMeWork.png"
             alt="image"
           />
 
           <img
             className={style.epp_header2}
-            src="/src/assets/Frame 1000005379.png"
+            src="/imagefolder/Frame 1000005379.png"
             alt="image"
           />
 
@@ -70,7 +70,7 @@ const LogIn = () => {
             <h4 className={style.google_para}>Continue with Google</h4>
             <img
               className={style.image_google}
-              src="/src/assets/Frame 1000005001.png"
+              src="/imagefolder/Frame 1000005001.png"
               alt="google logo"
             />
           </p>
@@ -78,7 +78,7 @@ const LogIn = () => {
             <h4 className={style.google_para}>Continue with Twitter</h4>
             <img
               className={style.image_google}
-              src="/src/assets/bi_twitter-x.png"
+              src="/imagefolder/bi_twitter-x.png"
               alt="twitter logo"
             />
           </p>

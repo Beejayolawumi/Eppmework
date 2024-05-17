@@ -11,7 +11,7 @@ const EmailSent = () => {
         </p>
       </div>
       <div className={style.image_div}>
-        <img src="/src/assets/mail 1.png" />
+        <img src="/imagefolder/mail 1.png" />
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const OurMission = () => {
           </div>
 
           <div className={style.eclipse}>
-            <img src="/src/assets/Ellipse 36.png" alt="Eclipse logo" />
+            <img src="/imagefolder/Ellipse 36.png" alt="Eclipse logo" />
           </div>
           <p className={style.paragraph}>
             At EppMeWork, our dedicated mission revolves around transforming the

@@ -30,7 +30,7 @@ const Question2 = () => {
               />
               <img
                 className={style.image}
-                src="/src/assets/mdi_location-on-outline.png"
+                src="/imagefolder/mdi_location-on-outline.png"
                 alt="landmap"
               />
             </div>

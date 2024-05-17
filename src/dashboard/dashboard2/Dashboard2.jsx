@@ -7,7 +7,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
 
@@ -16,7 +16,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
 
@@ -25,7 +25,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
 
@@ -34,7 +34,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
 
@@ -43,7 +43,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
 
@@ -52,7 +52,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
   {
@@ -60,7 +60,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
   {
@@ -68,7 +68,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
   {
@@ -76,7 +76,7 @@ const dummyData = [
     name: "John Mike",
     artisan: "Photographer",
     email: "Jibowu,Lagos",
-    image: "/src/assets/Rectangle 282.png",
+    image: "/imagefolder/Rectangle 282.png",
     price: "#35,000",
   },
 ];
@@ -84,35 +84,6 @@ const dummyData = [
 const Dashboard2 = () => {
   return (
     <div className={style.main_container}>
-      {/* <div className={style.parent_div}>
-        <div className={style.requests_container}>
-          <img
-            className={style.checklist}
-            src="/src/assets/checklist 1.png"
-            alt="checklist logo"
-          />
-          <h3 className={style.requests}>Total Requests</h3>
-          <p className={style.requests_para}>000</p>
-        </div>
-        <div className={style.requests_container}>
-          <img
-            className={style.checklist}
-            src="/src/assets/Frame 43122.png"
-            alt="mark logo"
-          />
-          <h3 className={style.requests}>Total Requests</h3>
-          <p className={style.requests_para}>000</p>
-        </div>
-        <div className={style.requests_container}>
-          <img
-            className={style.checklist}
-            src="/src/assets/expired 1.png"
-            alt="expired logo"
-          />
-          <h3 className={style.requests}>Total Requests</h3>
-          <p className={style.requests_para}>000</p>
-        </div>
-      </div> */}
       <p className={style.offer_para}>Offers</p>
       <div className={style.flex_container}>
         {dummyData.map((item, index) => {
@@ -123,11 +94,11 @@ const Dashboard2 = () => {
                   <div className={style.name}>{item.name} </div>
                   <div className={style.artisan}>{item.artisan}</div>
                   <div className={style.email}>
-                    <img src="/src/assets/MapPin.png" alt="map logo" />
+                    <img src="/imagefolder/MapPin.png" alt="map logo" />
                     {item.email}
                     <img
                       className={style.star}
-                      src="/src/assets/Frame 43146.png"
+                      src="/imagefolder/Frame 43146.png"
                       alt="5 star"
                     />
                   </div>
@@ -141,7 +112,7 @@ const Dashboard2 = () => {
                       <h3 className={style.accept}>
                         Accept
                         <img
-                          src="/src/assets/Group 2814.png"
+                          src="/imagefolder/Group 2814.png"
                           alt="accept logo"
                         />
                       </h3>
@@ -149,7 +120,10 @@ const Dashboard2 = () => {
                     <button className={style.btn_decline}>
                       <h3 className={style.decline}>
                         Decline
-                        <img src="/src/assets/x-close.png" alt="decline logo" />
+                        <img
+                          src="/imagefolder/x-close.png"
+                          alt="decline logo"
+                        />
                       </h3>
                     </button>
                   </div>

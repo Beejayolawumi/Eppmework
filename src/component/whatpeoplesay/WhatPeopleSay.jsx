@@ -7,8 +7,8 @@ const dummyData = [
     name: "Jane Doe",
     artisan: "Busy Professional",
     email: "@janedoe",
-    image: "/src/assets/imgUser.png",
-    social: "/src/assets/Group 13.png",
+    image: "/imagefolder/imgUser.png",
+    social: "/imagefolder/Group 13.png",
 
     message:
       "This platform has been a game-changer for me. As a busy professional, finding reliable assistance for various tasks has never been easier. The user-friendly interface and prompt service connections make it my go-to for getting things done efficiently.",
@@ -20,7 +20,7 @@ const dummyData = [
     artisan: "Task Provider",
     email: "@johnsmith",
     image: "/handsome-elegant-man-car-salon 1.png",
-    social: "/src/assets/Group 12.png",
+    social: "/imagefolder/Group 12.png",
 
     message:
       "I've provided my services on this platform for months, and it's been an incredible experience. It’s process of connecting with those in need, along with transparent communication and payments, makes it a hassle-free way to earn extra income.",
@@ -31,8 +31,8 @@ const dummyData = [
     name: "Emily Jonson",
     artisan: "Task Seeker",
     email: "@emilyjonson",
-    image: "/src/assets/nomad-woman-traveling-with-family 1.png",
-    social: "/src/assets/Group.png",
+    image: "/imagefolder/nomad-woman-traveling-with-family 1.png",
+    social: "/imagefolder/Group.png",
 
     message:
       "This platform is my go-to for any task at hand. From household chores to specialised services, it's a one-stop solution. The trustworthiness of the service providers and the easy-to-use app have made my life much easier.",
@@ -43,8 +43,8 @@ const dummyData = [
     name: "Alex Martinez",
     artisan: "Retiree Looking to Help",
     email: "@jalexmartinez",
-    image: "/src/assets/medium-shot-man-having-lunch-restaurant 1.png",
-    social: "/src/assets/Group.png",
+    image: "/imagefolder/medium-shot-man-having-lunch-restaurant 1.png",
+    social: "/imagefolder/Group.png",
 
     message:
       "In retirement, I sought ways to stay active and contribute. This platform enabled me to connect with people seeking assistance, creating a fulfilling and rewarding experience. The system's simplicity and the appreciation from those I've helped make it truly rewarding.",
@@ -56,8 +56,8 @@ const dummyData = [
     artisan: "College Student",
     email: "@sharonoja",
     image:
-      "/src/assets/student-strolls-college-yard-carries-rucksack-notepads-weas-pink-shirt-knitted-vest-hoop-surrounded-by-city-street-expresses-positive-emotions 1.png",
-    social: "/src/assets/Group 12.png",
+      "/imagefolder/student-strolls-college-yard-carries-rucksack-notepads-weas-pink-shirt-knitted-vest-hoop-surrounded-by-city-street-expresses-positive-emotions 1.png",
+    social: "/imagefolder/Group 12.png",
 
     message:
       "As a college student managing a tight schedule, this platform has been a lifesaver. Whether it's finding someone to help with moving or getting a tutor for a specific subject, the flexibility and variety of services make it an essential tool for students like me.",
@@ -68,8 +68,8 @@ const dummyData = [
     name: "Michael Arinze",
     artisan: "Skilled Professional",
     email: "@michaelarinze",
-    image: "/src/assets/medium-shot-smiley-man-posing-with-helmet 1.png",
-    social: "/src/assets/Group 13.png",
+    image: "/imagefolder/medium-shot-smiley-man-posing-with-helmet 1.png",
+    social: "/imagefolder/Group 13.png",
 
     message:
       "I'm impressed by the opportunities this platform provides for skilled professionals like myself. The ability to showcase my expertise, connect with clients, and receive prompt payments has made it an integral part of my freelance work. ",

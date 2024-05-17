@@ -19,7 +19,7 @@ const ResetPassword = () => {
         <div className={style.help}>
           <img
             className={style.baseline}
-            src="/src/assets/ic_baseline-help-outline.png"
+            src="/imagefolder/ic_baseline-help-outline.png"
             alt="baseline-icon"
           />
           Help
@@ -29,13 +29,13 @@ const ResetPassword = () => {
           <div className={style.epme_image}>
             <img
               className={style.epp_header}
-              src="/src/assets/EppMeWork.png"
+              src="/imagefolder/EppMeWork.png"
               alt="image"
             />
 
             <img
               className={style.epp_header2}
-              src="/src/assets/handshake (1) 1.png"
+              src="/imagefolder/handshake (1) 1.png"
               alt="image"
             />
           </div>

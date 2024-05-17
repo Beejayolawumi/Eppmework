@@ -36,7 +36,7 @@ const Question = () => {
 
           <img
             className={style.image}
-            src="/src/assets/Vector.png"
+            src="/imagefolder/Vector.png"
             alt="icon"
           />
           <div className={style.time_done}>
@@ -44,22 +44,22 @@ const Question = () => {
             <div className={style.components_image}>
               <img
                 className={style.imag1}
-                src="/src/assets/Component 15.png"
+                src="/imagefolder/Component 15.png"
                 alt="icon"
               />
               <img
                 className={style.imag2}
-                src="/src/assets/Component 16.png"
+                src="/imagefolder/Component 16.png"
                 alt="icon"
               />
               <img
                 className={style.imag3}
-                src="/src/assets/Component 17.png"
+                src="/imagefolder/Component 17.png"
                 alt="icon"
               />
               <img
                 className={style.imag4}
-                src="/src/assets/Component 18.png"
+                src="/imagefolder/Component 18.png"
                 alt="icon"
               />
             </div>

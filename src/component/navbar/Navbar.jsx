@@ -28,11 +28,11 @@ const Navbar = () => {
       <div className={style.innercontainer}>
         <div className={style.logo}>
           <div className={style.eppme}>
-            <img src="/src/assets/EppMeWork (1).png" alt="eppme logo" />
+            <img src="/imagefolder/EppMeWork (1).png" alt="eppme logo" />
           </div>
           <img
             className={style.image1}
-            src="/src/assets/handshake (1) 1.png"
+            src="/imagefolder/handshake (1) 1.png"
             alt="logo"
           />
         </div>

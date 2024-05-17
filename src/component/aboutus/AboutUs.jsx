@@ -6,47 +6,47 @@ import style from "./aboutus.module.css";
 const dummyData = [
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
 
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
 
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
 
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
 
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
 
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
   {
     name: "Michael Arinze",
-    image: "/src/assets/Frame 1000007521.png",
+    image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
 ];
@@ -58,7 +58,7 @@ const AboutUs = () => {
         <div className={style.about}>
           <img
             className={style.image}
-            src="/src/assets/medium-shot-man-cleaning-table 3.png"
+            src="/imagefolder/medium-shot-man-cleaning-table 3.png"
             alt="medium man"
           />
           <h4 className={style.about_header}>About Us</h4>
@@ -67,33 +67,33 @@ const AboutUs = () => {
           <div className={style.image_div}>
             <img
               className={style.elegantman}
-              src="/src/assets/handsome-elegant-man-car-salon 1.png"
+              src="/imagefolder/handsome-elegant-man-car-salon 1.png"
               alt="elegant man"
             />
             <img
               className={style.frame}
-              src="/src/assets/Frame 1000007452.png"
+              src="/imagefolder/Frame 1000007452.png"
               alt="frame"
             />
             <img
               className={style.frame1}
-              src="/src/assets/Frame 1000007449.png"
+              src="/imagefolder/Frame 1000007449.png"
               alt="frame"
             />
 
             <img
               className={style.frame2}
-              src="/src/assets/african-american-man-getting-ready-his-new-home-move (1) 1.png"
+              src="/imagefolder/african-american-man-getting-ready-his-new-home-move (1) 1.png"
               alt="American man"
             />
             <img
               className={style.frame3}
-              src="/src/assets/Frame 1000007451.png"
+              src="/imagefolder/Frame 1000007451.png"
               alt="frame"
             />
             <img
               className={style.frame4}
-              src="/src/assets/Frame 1000007450.png"
+              src="/imagefolder/Frame 1000007450.png"
               alt="frame"
             />
           </div>
@@ -130,33 +130,33 @@ const AboutUs = () => {
           <div className={style.image_div2}>
             <img
               className={style.elegantman}
-              src="/src/assets/handsome-elegant-man-car-salon 1.png"
+              src="/imagefolder/handsome-elegant-man-car-salon 1.png"
               alt="elegant man"
             />
             <img
               className={style.frame}
-              src="/src/assets/Frame 1000007452.png"
+              src="/imagefolder/Frame 1000007452.png"
               alt="frame"
             />
             <img
               className={style.frame1}
-              src="/src/assets/Frame 1000007449.png"
+              src="/imagefolder/Frame 1000007449.png"
               alt="frame"
             />
 
             <img
               className={style.frame2}
-              src="/src/assets/african-american-man-getting-ready-his-new-home-move (1) 1.png"
+              src="/imagefolder/african-american-man-getting-ready-his-new-home-move (1) 1.png"
               alt="American man"
             />
             <img
               className={style.frame3}
-              src="/src/assets/Frame 1000007451.png"
+              src="/imagefolder/Frame 1000007451.png"
               alt="frame"
             />
             <img
               className={style.frame4}
-              src="/src/assets/Frame 1000007450.png"
+              src="/imagefolder/Frame 1000007450.png"
               alt="frame"
             />
           </div>

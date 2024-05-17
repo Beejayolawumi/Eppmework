@@ -70,32 +70,6 @@ const Explore = () => {
             />
           </Button>
         </div>
-        {/* <div className={style.book}>
-          <div></div>
-          <h4>
-            <Link to="/Question" className={style.btn__1}>
-              <p>Book a Service</p>
-              <p className={style.arrow}>
-                <img
-                  className={style.arrow_img}
-                  src="\ArrowRight.png"
-                  alt="arrow right"
-                />
-              </p>
-            </Link>
-          </h4>
-          <h4 className={style.btn__2}>
-            Offer Services
-            <p className={style.arrow}>
-              <img
-                className={style.arrow_img2}
-                src="\ArrowRight.png"
-                alt="arrow right"
-              />
-            </p>
-            <p className={style.arrow2}></p>
-          </h4>
-        </div> */}
       </div>
 
       <div className={style.image_container}>
@@ -103,23 +77,23 @@ const Explore = () => {
           <div className="image_container">
             <img
               className={style.animated_image}
-              src="/medium-shot-man-cleaning-table 4.png"
+              src="/public/medium-shot-man-cleaning-table 4.png"
               alt="A man cleaning"
             />
 
             <img
               className={style.animated_image}
-              src="/src/assets/african-american-man-getting-ready-his-new-home-move (1) 1.png"
+              src="/imagefolder/african-american-man-getting-ready-his-new-home-move (1) 1.png"
               alt="A man cleaning"
             />
             <img
               className={style.animated_image}
-              src="/src/assets/handsome-elegant-man-car-salon 1.png"
+              src="/imagefolder/handsome-elegant-man-car-salon 1.png"
               alt="A man cleaning"
             />
             <img
               className={style.animated_image}
-              src="/src/assets/side-view-adult-male-cleaning-window 1 (1).png"
+              src="/imagefolder/side-view-adult-male-cleaning-window 1 (1).png"
               alt="A man cleaning"
             />
           </div>

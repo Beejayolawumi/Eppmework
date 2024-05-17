@@ -3,52 +3,52 @@ import style from "./notification.module.css";
 
 const dummyData = [
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "2 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "4 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "6 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "8 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "10 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "12 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "14 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "16 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "18 minutes",
   },
   {
-    image: "/src/assets/Frame 1000007395.png ",
+    image: "/imagefolder/Frame 1000007395.png ",
     name: "Pablo Ini",
     time: "20 minutes",
   },

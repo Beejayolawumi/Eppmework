@@ -23,7 +23,7 @@ const CreateAccount = () => {
       <div className={style.help}>
         <img
           className={style.baseline}
-          src="/src/assets/ic_baseline-help-outline.png"
+          src="/imagefolder/ic_baseline-help-outline.png"
           alt="baseline-icon"
         />
         Help
@@ -34,13 +34,13 @@ const CreateAccount = () => {
         <div className={style.header_image}>
           <img
             className={style.epp_header}
-            src="/src/assets/EppMeWork.png"
+            src="/imagefolder/EppMeWork.png"
             alt="image"
           />
 
           <img
             className={style.epp_header2}
-            src="/src/assets/Frame 1000005379.png"
+            src="/imagefolder/Frame 1000005379.png"
             alt="image"
           />
         </div>

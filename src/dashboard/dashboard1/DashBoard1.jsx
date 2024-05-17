@@ -13,16 +13,16 @@ const DashBoard1 = () => {
     <div className={style.main}>
       <div className={style.sidebar_container}>
         <div className={style.sidebar_image}>
-          <img src="/src/assets/EppMeWork (2).png" alt="epmework logo" />
+          <img src="/imagefolder/EppMeWork (2).png" alt="epmework logo" />
         </div>
         <img
           className={style.collapse}
-          src="/src/assets/CaretDoubleLeft.png"
+          src="/imagefolder/CaretDoubleLeft.png"
           alt=" collapse logo"
         />
         <img
           className={style.image1}
-          src="/src/assets/handshake (1) 1.png"
+          src="/imagefolder/handshake (1) 1.png"
           alt="logo"
         />
 
@@ -36,15 +36,18 @@ const DashBoard1 = () => {
                 }}
               >
                 <img
-                  src="/src/assets/mage_dashboard.png"
+                  src="/imagefolder/mage_dashboard.png"
                   alt="dashboard logo"
                 />
-                <img src="/src/assets/Dashboard.png" alt="dashboard logo" />
+                <img src="/imagefolder/Dashboard.png" alt="dashboard logo" />
               </Link>
             </li>
 
             <li className={style.request}>
-              <img src="/src/assets/material-symbols_add.png" alt="plus logo" />
+              <img
+                src="/imagefolder/material-symbols_add.png"
+                alt="plus logo"
+              />
               <Link
                 to="/Question"
                 style={{
@@ -56,7 +59,7 @@ const DashBoard1 = () => {
             </li>
             <li className={style.request}>
               <img
-                src="/src/assets/fluent_tooltip-quote-20-regular.png"
+                src="/imagefolder/fluent_tooltip-quote-20-regular.png"
                 alt="offer logo"
               />
               <Link
@@ -70,25 +73,25 @@ const DashBoard1 = () => {
             </li>
             <li className={style.request}>
               <img
-                src="/src/assets/material-symbols_chat-outline.png"
+                src="/imagefolder/material-symbols_chat-outline.png"
                 alt="inbox logo"
               />
               Inbox
             </li>
             <li className={style.request}>
-              <img src="/src/assets/Wallet.png" alt="wallet logo" />
+              <img src="/imagefolder/Wallet.png" alt="wallet logo" />
               Payment
             </li>
             <li className={style.request}>
               <img
-                src="/src/assets/mdi_account-outline.png"
+                src="/imagefolder/mdi_account-outline.png"
                 alt="profile logo"
               />
               Profile
             </li>
             <li className={style.request}>
               <img
-                src="/src/assets/material-symbols_logout.png"
+                src="/imagefolder/material-symbols_logout.png"
                 alt="log out logo"
               />
               Log out
@@ -103,7 +106,10 @@ const DashBoard1 = () => {
 
           <div className={style.jane}>
             <p>
-              <img src="/src/assets/carbon_settings.png" alt="carbon setting" />
+              <img
+                src="/imagefolder/carbon_settings.png"
+                alt="carbon setting"
+              />
             </p>
             <p>
               <Link
@@ -113,21 +119,21 @@ const DashBoard1 = () => {
                 }}
               >
                 <img
-                  src="/src/assets/solar_bell-linear.png"
+                  src="/imagefolder/solar_bell-linear.png"
                   alt="sollar bell"
                 />
               </Link>
             </p>
             <p>
-              <img src="/src/assets/Rectangle 101.png" alt="rectangle" />
+              <img src="/imagefolder/Rectangle 101.png" alt="rectangle" />
             </p>
             <p>
-              <img src="/src/assets/Rectangle 2.png" alt="sollar bell" />
+              <img src="/imagefolder/Rectangle 2.png" alt="sollar bell" />
             </p>
             <p>{userDeatils}</p>
 
             <p>
-              <img src="/src/assets/chevron-down.png" alt="chevron down" />
+              <img src="/imagefolder/chevron-down.png" alt="chevron down" />
             </p>
           </div>
         </div>
@@ -139,7 +145,7 @@ const DashBoard1 = () => {
           <div className={style.greeting_image}>
             <img
               className={style.image}
-              src="/src/assets/Icon.png"
+              src="/imagefolder/Icon.png"
               alt="adding icon"
             />
             <p className={style.greeting_para}>Request</p>
@@ -150,7 +156,7 @@ const DashBoard1 = () => {
           <div className={style.requests_container}>
             <img
               className={style.checklist}
-              src="/src/assets/checklist 1.png"
+              src="/imagefolder/checklist 1.png"
               alt="checklist logo"
             />
             <h3 className={style.requests}>Total Requests</h3>
@@ -159,7 +165,7 @@ const DashBoard1 = () => {
           <div className={style.requests_container}>
             <img
               className={style.checklist}
-              src="/src/assets/Frame 43122.png"
+              src="/imagefolder/Frame 43122.png"
               alt="mark logo"
             />
             <h3 className={style.requests}>Total Requests</h3>
@@ -168,7 +174,7 @@ const DashBoard1 = () => {
           <div className={style.requests_container}>
             <img
               className={style.checklist}
-              src="/src/assets/expired 1.png"
+              src="/imagefolder/expired 1.png"
               alt="expired logo"
             />
             <h3 className={style.requests}>Total Requests</h3>
