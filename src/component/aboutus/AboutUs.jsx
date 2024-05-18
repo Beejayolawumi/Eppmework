@@ -5,13 +5,13 @@ import style from "./aboutus.module.css";
 
 const dummyData = [
   {
-    name: "Michael Arinze",
-    image: "/imagefolder/Frame 1000007521.png",
-    track: "Product Designer",
+    name: "Jamiu Olawumi",
+    image: "/imagefolder/official-image.jpeg",
+    track: "Frontend Developer",
   },
 
   {
-    name: "Michael Arinze",
+    name: "Ebele Okafor",
     image: "/imagefolder/Frame 1000007521.png",
     track: "Product Designer",
   },
